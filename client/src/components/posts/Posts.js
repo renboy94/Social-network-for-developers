@@ -12,13 +12,13 @@ class Posts extends Component {
   }
 
   render() {
-    const { posts, loading } = this.props.post;
+    const { posts, profile, loading } = this.props.post;
     let postContent;
 
     if (posts === null || loading) {
       postContent = <Spinner />;
     } else {
-      postContent = <PostFeed posts={posts} />;
+      postContent = <PostFeed posts={posts} profile={profile} />;
     }
 
     return (
@@ -38,11 +38,13 @@ class Posts extends Component {
 
 Posts.propTypes = {
   getPosts: PropTypes.func.isRequired,
-  post: PropTypes.object.isRequired
+  post: PropTypes.object.isRequired,
+  profile: PropTypes.object.isRequired
 };
 
 const mapStateToProps = state => ({
-  post: state.post
+  post: state.post,
+  profile: state.profile
 });
 
 export default connect(
