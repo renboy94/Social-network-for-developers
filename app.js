@@ -18,16 +18,12 @@ app.use(bodyParser.json());
 const db = require("./config/keys").mongoURI;
 
 // Connect to MongoDB
-// if (process.env.NODE_ENV !== "test") {
-//   mongoose
-//     .connect(db)
-//     .then(() => console.log("MongoDB Connected"))
-//     .catch(err => console.log(err));
-// }
-mongoose
-  .connect(db)
-  .then(() => console.log("MongoDB Connected"))
-  .catch(err => console.log(err));
+if (process.env.NODE_ENV !== "test") {
+  mongoose
+    .connect(db)
+    .then(() => console.log("MongoDB Connected"))
+    .catch(err => console.log(err));
+}
 
 // Passpoer middleware
 app.use(passport.initialize());

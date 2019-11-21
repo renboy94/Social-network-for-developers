@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1574369688463" clover="3.2.0">
-  <project timestamp="1574369688463" name="All files">
-    <metrics statements="422" coveredstatements="338" conditionals="186" coveredconditionals="97" methods="108" coveredmethods="85" elements="716" coveredelements="520" complexity="0" loc="422" ncloc="422" packages="6" files="20" classes="20"/>
+<coverage generated="1574370904118" clover="3.2.0">
+  <project timestamp="1574370904118" name="All files">
+    <metrics statements="425" coveredstatements="338" conditionals="190" coveredconditionals="99" methods="108" coveredmethods="84" elements="723" coveredelements="521" complexity="0" loc="425" ncloc="425" packages="6" files="20" classes="20"/>
     <package name="devconnector">
-      <metrics statements="25" coveredstatements="21" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="1"/>
+      <metrics statements="26" coveredstatements="20" conditionals="4" coveredconditionals="2" methods="3" coveredmethods="0"/>
       <file name="app.js" path="/Users/rendell/Documents/nodejs/devconnector/app.js">
-        <metrics statements="25" coveredstatements="21" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="1"/>
+        <metrics statements="26" coveredstatements="20" conditionals="4" coveredconditionals="2" methods="3" coveredmethods="0"/>
         <line num="1" count="4" type="stmt"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
@@ -18,30 +18,33 @@
         <line num="14" count="4" type="stmt"/>
         <line num="15" count="4" type="stmt"/>
         <line num="18" count="4" type="stmt"/>
-        <line num="27" count="4" type="stmt"/>
-        <line num="29" count="3" type="stmt"/>
-        <line num="30" count="0" type="stmt"/>
-        <line num="33" count="4" type="stmt"/>
+        <line num="21" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="29" count="4" type="stmt"/>
+        <line num="32" count="4" type="stmt"/>
+        <line num="35" count="4" type="stmt"/>
         <line num="36" count="4" type="stmt"/>
-        <line num="39" count="4" type="stmt"/>
-        <line num="40" count="4" type="stmt"/>
-        <line num="41" count="4" type="stmt"/>
-        <line num="44" count="4" type="cond" truecount="1" falsecount="1"/>
-        <line num="46" count="0" type="stmt"/>
-        <line num="48" count="0" type="stmt"/>
-        <line num="49" count="0" type="stmt"/>
-        <line num="53" count="4" type="stmt"/>
+        <line num="37" count="4" type="stmt"/>
+        <line num="40" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="49" count="4" type="stmt"/>
       </file>
     </package>
     <package name="devconnector.config">
-      <metrics statements="19" coveredstatements="16" conditionals="4" coveredconditionals="2" methods="4" coveredmethods="3"/>
+      <metrics statements="21" coveredstatements="17" conditionals="6" coveredconditionals="3" methods="4" coveredmethods="3"/>
       <file name="keys.js" path="/Users/rendell/Documents/nodejs/devconnector/config/keys.js">
-        <metrics statements="3" coveredstatements="2" conditionals="2" coveredconditionals="1" methods="0" coveredmethods="0"/>
+        <metrics statements="5" coveredstatements="3" conditionals="4" coveredconditionals="2" methods="0" coveredmethods="0"/>
         <line num="1" count="4" type="cond" truecount="1" falsecount="1"/>
         <line num="2" count="0" type="stmt"/>
+        <line num="3" count="4" type="cond" truecount="1" falsecount="1"/>
         <line num="4" count="4" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
       </file>
-      <file name="keys_dev.js" path="/Users/rendell/Documents/nodejs/devconnector/config/keys_dev.js">
+      <file name="keys_test.js" path="/Users/rendell/Documents/nodejs/devconnector/config/keys_test.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="4" type="stmt"/>
       </file>
