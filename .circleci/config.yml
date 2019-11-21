@@ -54,3 +54,8 @@ jobs:
       # run tests!
       - run: npm test tests -- --coverage
       - run: cd client && npm test -- --coverage
+
+      - run:
+          name: Deploy Master to Heroku
+          command: |
+            git push https://heroku:754e9617-36da-446c-b485-8f52232d097e@git.heroku.com/dev-hangouts.git master
