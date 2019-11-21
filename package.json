@@ -4,7 +4,7 @@
   "description": "Social network for developers",
   "main": "server.js",
   "scripts": {
-    "test": "CI=true jest --watchAll",
+    "test": "jest --watchAll",
     "client-install": "npm install --prefix client",
     "start": "node server.js",
     "server": "nodemon server.js",
