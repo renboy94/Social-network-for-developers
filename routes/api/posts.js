@@ -29,7 +29,7 @@ router.get("/", (req, res) => {
 });
 
 // @route GET api/posts/:id
-// @desc Get posts
+// @desc Get post
 // @access Public
 router.get("/:id", (req, res) => {
   Post.findById(req.params.id)

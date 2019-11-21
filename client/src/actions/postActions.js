@@ -14,7 +14,7 @@ import {
 // Add Post
 export const addPost = postData => dispatch => {
   dispatch(clearErrors());
-  axios
+  return axios
     .post("/api/posts", postData)
     .then(res =>
       dispatch({
@@ -33,7 +33,7 @@ export const addPost = postData => dispatch => {
 // Get Posts
 export const getPosts = () => dispatch => {
   dispatch(setPostLoading());
-  axios
+  return axios
     .get("/api/posts")
     .then(res =>
       dispatch({
@@ -52,7 +52,7 @@ export const getPosts = () => dispatch => {
 // Get Post
 export const getPost = id => dispatch => {
   dispatch(setPostLoading());
-  axios
+  return axios
     .get(`/api/posts/${id}`)
     .then(res =>
       dispatch({
@@ -70,7 +70,7 @@ export const getPost = id => dispatch => {
 
 // Delete Post
 export const deletePost = id => dispatch => {
-  axios
+  return axios
     .delete(`/api/posts/${id}`)
     .then(res =>
       dispatch({
@@ -100,7 +100,7 @@ export const deletePost = id => dispatch => {
 // };
 
 export const addLike = id => dispatch => {
-  axios
+  return axios
     .post(`/api/posts/like/${id}`)
     .then(({ data }) => {
       dispatch({

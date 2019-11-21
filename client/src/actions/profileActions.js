@@ -12,7 +12,7 @@ import {
 // Get curernt profile
 export const getCurrentProfile = () => dispatch => {
   dispatch(setProfileLoading());
-  axios
+  return axios
     .get("/api/profile")
     .then(res =>
       dispatch({
@@ -49,7 +49,7 @@ export const getProfileByHandle = handle => dispatch => {
 
 // Create Profile
 export const createProfile = (profileData, history) => dispatch => {
-  axios
+  return axios
     .post("/api/profile", profileData)
     .then(res => history.push("/dashbaord"))
     .catch(err =>
@@ -125,7 +125,7 @@ export const deleteEducation = id => dispatch => {
 // Get all profiles
 export const getProfiles = id => dispatch => {
   dispatch(setProfileLoading());
-  axios
+  return axios
     .get("/api/profile/all")
     .then(res =>
       dispatch({
@@ -142,9 +142,11 @@ export const getProfiles = id => dispatch => {
 };
 
 // Delete account & profile
-export const deleteAccount = () => dispatch => {
-  if (window.confirm("Are you sure? This can NOT be undone!")) {
-    axios
+export const deleteAccount = (
+  confirm = window.confirm("Are you sure? This can NOT be undone!")
+) => dispatch => {
+  if (confirm) {
+    return axios
       .delete("/api/profile")
       .then(res =>
         dispatch({
