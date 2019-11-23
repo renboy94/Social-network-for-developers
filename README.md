@@ -2,7 +2,15 @@
 
 DevConnector is a social networking site to connect with other developers
 
-## Intructions
+## Technologies Used
+
+- React, Redux, Redux Thunk
+- Bootstrap
+- Node Express, Jsonwebtoken, Mongoose, Passport
+- CircleCI, Heroku
+- Jest, mongodb-memory-server, Supertest, Moxios, redux-mock-store
+
+## Usage
 
 ```
 ## clone repo
