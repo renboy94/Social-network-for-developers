@@ -1,6 +1,6 @@
 # Social-network-for-developers
 
-DevConnector is a social networking site to connect with other developers
+DevHangouts: A social hub to connect with other developers
 
 ## Technologies Used
 
